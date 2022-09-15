@@ -1,7 +1,7 @@
 import "./works.scss";
 function Works() {
   return (
-    <div>Works</div>
+    <div className="works" id="works">Works</div>
   )
 }
 

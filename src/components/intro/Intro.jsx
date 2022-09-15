@@ -2,7 +2,7 @@ import React from 'react'
 
 function Intro() {
   return (
-    <div className='intro'>Intro</div>
+    <div className='intro' id='intro'>Intro</div>
   )
 }
 
