@@ -1,7 +1,17 @@
 import "./intro.scss";
 import { ExpandMore } from "@material-ui/icons";
+import { init } from "ityped";
+import { useEffect, useRef} from "react";
 
 function Intro() {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      strings: ["Developer", "Freelancer", "Designer"],
+    });
+  }, []);
+
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -14,7 +24,7 @@ function Intro() {
           <h2>Hi There, I"m</h2>
           <h1>Fatih Yazicioglu</h1>
           <h3>
-            Frontend Developer <span></span>
+            Backend-Frontend <span ref={textRef}></span>
           </h3>
           <ExpandMore className="downIcon" />
         </div>
