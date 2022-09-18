@@ -1,9 +1,35 @@
-import  './portfolio.scss'
+import "./portfolioList.scss";
 
-function PortfolioList() {
-  return (
-    <li className="portfolioList">PortfolioList</li>
-  )
+
+
+function PortfolioList({ title }) {
+  return <li className="portfolioList">{title}</li>;
 }
 
-export default PortfolioList
+export default PortfolioList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
